@@ -22,7 +22,7 @@ changeVcsRoot(RelativeId("PetclinicVcs")) {
     }
 
     (this as GitVcsRoot).apply {
-        branch = "refs/heads/master"
+        branch = "refs/heads/main"
         checkoutPolicy = GitVcsRoot.AgentCheckoutPolicy.USE_MIRRORS
     }
 
