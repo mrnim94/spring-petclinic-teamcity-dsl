@@ -43,8 +43,8 @@ object Build : BuildType({
     }
     steps {
         maven {
-            goals = "clean package"
-            dockerImage = "maven:3.6.0-jdk-8"
+            goals = "clean test"
+            runnerArgs = "-Dmaven.test.failure.ignore=true"
         }
     }
     triggers {
