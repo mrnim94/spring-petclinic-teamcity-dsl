@@ -52,6 +52,10 @@ object Build : BuildType({
             groupCheckinsByCommitter = true
         }
     }
+    
+    requirements {
+        startsWith("system.agent.name", "ip_172.17.0.1")
+    }
 })
 
 object PetclinicVcs : GitVcsRoot({
