@@ -7,24 +7,7 @@
       <option name="artifactRules" value="target/*jar" />
     </options>
     <parameters />
-    <build-runners>
-      <runner id="RUNNER_1" name="" type="Maven2">
-        <parameters>
-          <param name="goals" value="clean package" />
-          <param name="localRepoScope" value="mavenDefault" />
-          <param name="maven.path" value="%teamcity.tool.maven.DEFAULT%" />
-          <param name="plugin.docker.imageId" value="maven:3.6.0-jdk-8" />
-          <param name="pomLocation" value="pom.xml" />
-          <param name="teamcity.coverage.emma.include.source" value="true" />
-          <param name="teamcity.coverage.emma.instr.parameters" value="-ix -*Test*" />
-          <param name="teamcity.coverage.idea.includePatterns" value="*" />
-          <param name="teamcity.coverage.jacoco.patterns" value="+:*" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="teamcity.tool.jacoco" value="%teamcity.tool.jacoco.DEFAULT%" />
-          <param name="userSettingsSelection" value="userSettingsSelection:default" />
-        </parameters>
-      </runner>
-    </build-runners>
+    <build-runners />
     <vcs-settings>
       <vcs-entry-ref root-id="NimtechnologyBuildchain_KotlinBuildConfiguration_PetclinicVcs" />
     </vcs-settings>
